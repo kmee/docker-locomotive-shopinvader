@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY install /usr/src/install
 COPY bin /usr/src/bin
 
-ENV BUILD_PACKAGE curl gpg git build-essential
+ENV BUILD_PACKAGE curl gpg git build-essential locale
 
 COPY shopinvader ./
 
@@ -17,6 +17,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     && /usr/src/install/gosu.sh \
     && /usr/src/install/shopinvader.sh \
     && apt-get upgrade -y -o Dpkg::Options::="--force-confold" \
+    && locale-gen pt_BR.UTF-8
     && apt-get purge -y $BUILD_PACKAGE \
     && apt-get clean
 
