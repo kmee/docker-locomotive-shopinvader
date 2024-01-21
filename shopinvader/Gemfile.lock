@@ -282,10 +282,11 @@ GEM
     kramdown (2.3.2)
       rexml
     liquid (4.0.4)
-    listen (3.8.0)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
-    locomotivecms (4.1.0)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
+    locomotivecms (4.1.1)
       actionmailer-with-request (~> 0.5.0)
       adomain (~> 0.1.1)
       autoprefixer-rails (~> 8.0.0)
@@ -312,7 +313,7 @@ GEM
       json-schema (~> 2.8.0)
       kaminari-actionview (~> 1.2.1)
       kaminari-mongoid (~> 1.0.1)
-      locomotivecms_steam (~> 1.6.0)
+      locomotivecms_steam (~> 1.6.1)
       mongo (= 2.13.1)
       mongoid (~> 6.4.0)
       mongoid-tree (~> 2.1.0)
@@ -334,7 +335,7 @@ GEM
       attr_extras (~> 5.2.0)
       colorize
       stringex (~> 2.8.2)
-    locomotivecms_steam (1.6.0)
+    locomotivecms_steam (1.6.1)
       RedCloth (~> 4.3.2)
       autoprefixer-rails (~> 8.0.0)
       bcrypt (~> 3.1.11)
@@ -427,7 +428,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.13.10)
+    nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     nokogumbo (2.0.5)
@@ -448,7 +449,7 @@ GEM
       puma (>= 2.7)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
-    racc (1.7.1)
+    racc (1.6.0)
     rack (2.1.4.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -498,6 +499,7 @@ GEM
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
     rexml (3.2.5)
+    ruby_dep (1.2)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sanitize (5.2.3)
@@ -594,7 +596,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   locomotivecms
   locomotivecms_common
-  locomotivecms_steam (= 1.6.0)
+  locomotivecms_steam (= 1.6.1)
   mongo_session_store (~> 3.1.0)
   mongoid
   puma (~> 5.1.0)

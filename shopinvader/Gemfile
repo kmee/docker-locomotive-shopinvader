@@ -4,16 +4,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'mongoid'
 gem 'devise'
 
-gem 'locomotivecms_common'
-gem 'custom_fields'
-gem 'locomotivecms_steam', '=1.6.0'
-gem 'locomotivecms'
+gem 'locomotivecms_common', '=0.4.0'
+gem 'custom_fields', '=2.12.1'
+gem 'locomotivecms_steam', '=1.6.1'
+gem 'locomotivecms', '=4.1.1'
 
 gem 'shop_invader', github: 'shopinvader/locomotive-shopinvader', branch: 'v4.0.x'
 gem 'mongo_session_store', '~> 3.1.0'
 
 # TODO FIXME needed to precompile asset in docker
-#gem 'listen', '>= 3.0.5', '< 3.2'
+gem 'listen', '>= 3.0.5', '< 3.2'
 #gem 'nokogiri', '>= 1.10.3'
 
 gem 'aws-sdk-s3', '= 1.81.0'
