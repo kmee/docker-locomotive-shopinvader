@@ -18,7 +18,7 @@ services:
     # In production never never never use latest !
     # use a specific tag image in order to be sure
     # of what you install
-    image: quay.io/akretion/shopinvader:latest
+    build: .
     links:
       - db
     volumes:
@@ -33,6 +33,7 @@ services:
       - LOCOMOTIVE_ENABLE_REGISTRATION=true
       - LOCOMOTIVE_ADMIN_SSL_REDIRECT=false
       - RAILS_SERVE_STATIC_FILES=true
+      - SECRET_KEY_BASE=
     networks:
       default:
       shopinvader-shared-odoo-net:
