@@ -1,0 +1,136 @@
+pt-BR:
+  locomotive:
+    editor:
+      shared:
+        confirm: "Você está certo disto?"
+
+      components:
+        cropper:
+          title: "Cortar imagem"
+          action: "Aplicar"
+          action_in_progress: "Cortando..."
+
+        locale_switcher:
+          locale: "<strong>{{locale}}</strong> version"
+
+        draft:
+          link:
+            title: Inserir Link
+            insert_link: Feito
+
+      inputs:
+        url:
+          select_button: "Selecionar"
+          change_button: "Alterar"
+          remove_button: "Remover"
+          types:
+            page: Página
+            content_entry: Model
+            _external: URL
+            email: Email
+
+        image_picker:
+          select_button: "Selecionar"
+          change_button: "Alterar"
+          remove_button: "Remover"
+          crop_button: "Cortar"
+
+        asset_picker:
+          select_button: "Selecionar"
+          change_button: "Alterar"
+          remove_button: "Remover"
+
+        content_type:
+          show: "Exibir"
+
+        content_entry:
+          select_button: "Selecionar"
+          change_button: "Alterar"
+          remove_button: "Remover"
+
+      views:
+        action_bar:
+          header:
+            no_title: "Sem título"
+            save_button:
+              label: "Salvar"
+              in_progress: "Salvando..."
+              success: "Alterações Salvas"
+              error: "Alterações NÃO Salvas"
+
+          menu:
+            content: "Conteúdo"
+            settings: "Configurações"
+            seo: "SEO"
+
+        pickers:
+          assets:
+            title: "Assets"
+            loading: "Carregando assets. Por favor aguarde!"
+            add: "+ add"
+            upload_in_progress: "Uploading..."
+            search_placeholder: "Nome do asset"
+          images:
+            title: "Imagens"
+            loading: "Carregando as imagens. Por favor aguarde!"
+            add: "+ adicionar"
+            too_big: "A imagem é muito grande: O tamanho máximo de arquivos é 2MB"
+            upload_in_progress: "Uploading..."
+          url:
+            title: "Selecione um alvo"
+            open_new_window: "Abrir em uma nova janela?"
+            types:
+              page: Página
+              content_entry: Model
+              _external: URL
+              email: Email
+            page:
+              label: Página
+              placeholder: Insira o título da sua página
+              section_label: Section
+            content_entry:
+              content_type_label: Qual model?
+              label: Instância do seu model
+              placeholder: Insira a label da instância
+            _external:
+              label: Endereço da URL
+              placeholder: "https://www.example.com"
+            email:
+              label: Endereço do Email
+              placeholder: "name@example.com"
+          content_entry:
+            title: "Escolha uma entrada"
+            input:
+              label: Instância
+              placeholder: Insira a label da instância
+
+        preview:
+          view: "Visualizar"
+          errorMessage: "A página não pôde ser carregada. Favor contatar o desenvolvedor do site."
+
+        sections:
+          edit:
+            default_block_label: "Conteúdo"
+            add_block: "+ adicionar"
+
+          gallery:
+            title: "Adicionar uma nova section"
+            add: "Adicionar"
+
+          dropzone:
+            add: "+ adicionar section"
+
+        seo:
+          title_label: "Título SEO"
+          meta_keywords_label: "META keywords"
+          meta_description_label: "META description"
+
+        settings:
+          title_label: "Título"
+          slug_label: "Slug"
+          published: "Publicado?"
+          listed: "Listado no menu?"
+          more: "Mais configurações..."
+
+        startup:
+          waiting: "Aguardando o painel de pré-visualização estar pronto"
